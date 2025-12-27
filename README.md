@@ -1,8 +1,9 @@
 <h1 align="center">🎭 Multi-Modal Sentiment Analysis — Text + Image Fusion</h1>
 
 <p align="center">
-🤖 Deep Learning • 📝 Hugging Face Transformers • 🖼 PyTorch CNN • 🌐 Streamlit Web App
+📦 <b>Python • 🤖 Deep Learning • 📝 Hugging Face Transformers • 🖼 PyTorch CNN • 🌐 Streamlit Web App</b>
 </p>
+
 
 <p align="center">
 A deep-learning based multi-modal sentiment analysis system that analyzes social media posts by combining <b>text</b> and <b>image</b> data.  
