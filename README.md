@@ -1,8 +1,13 @@
 <h1 align="center">🎭 Multi-Modal Sentiment Analysis — Text + Image Fusion</h1>
 
 <p align="center">
-📦 <b>Python • 🤖 Deep Learning • 📝 Hugging Face Transformers • 🖼 PyTorch CNN • 🌐 Streamlit Web App</b>
+<img src="https://img.shields.io/badge/Python-3.10%2B-blue">
+<img src="https://img.shields.io/badge/Deep%20Learning-Neural%20Networks-red">
+<img src="https://img.shields.io/badge/HuggingFace-Transformers-yellow">
+<img src="https://img.shields.io/badge/PyTorch-CNN-orange">
+<img src="https://img.shields.io/badge/Streamlit-Web%20App-brightgreen">
 </p>
+
 
 
 <p align="center">
