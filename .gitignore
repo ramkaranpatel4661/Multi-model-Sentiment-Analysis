@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Dataset
+memotion_dataset_7k/
+
+# Models (too large for GitHub)
+*.pth
+*.pt
+
+# Streamlit
+.streamlit/
