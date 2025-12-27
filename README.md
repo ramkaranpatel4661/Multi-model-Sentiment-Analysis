@@ -1,60 +1,113 @@
-# Multi-modal Sentiment Analysis
+🎭 Multi-Modal Sentiment Analysis — Text + Image Fusion
 
-## 🎭 Overview
-This project implements a **Multi-modal Sentiment Analysis** system that fuses **text and image** data to predict the sentiment of social media posts. It utilizes a deep learning approach combining **DistilBERT** (for text) and **ResNet50** (for images) to achieve accurate sentiment classification.
 
-## ✨ Features
-*   **Multi-modal Fusion**: Combines transformer-based text embeddings with CNN-based image features.
-*   **Interactive Web App**: A user-friendly Streamlit interface for real-time inference.
-*   **Custom Dataset Support**: Designed for the Memotion Dataset 7k.
-*   **Robust Architecture**: Built with PyTorch and Hugging Face Transformers.
 
-## 🛠️ Installation
 
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/ramkaranpatel4661/Multi-model-Sentiment-Analysis.git
-    cd Multi-model-Sentiment-Analysis
-    ```
 
-2.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
 
-## 🚀 Usage
 
-### Running the Web App
-To start the interactive interface:
-```bash
-streamlit run app.py
-```
-Then open your browser at `http://localhost:8501`.
 
-### Training the Model
-To train the model from scratch on your dataset:
-```bash
-python src/train.py --epochs 3
-```
-This will save the best performing model as `best_model.pth`.
 
-## 📂 Project Structure
-```
+
+A deep-learning based multi-modal sentiment analysis system that predicts sentiment by combining text and image features. The project uses:
+
+📝 DistilBERT (Transformers) for text embeddings
+
+🖼️ ResNet-50 (CNN) for image feature extraction
+
+🔗 Feature Fusion + Classifier for sentiment prediction
+
+🌐 Streamlit Web App for real-time inference
+
+Trained on the Memotion Dataset 7K.
+
+🚀 Features
+
+🔹 Multi-modal Fusion — Transformer (Text) + CNN (Image)
+
+🔹 Pretrained Models — Transfer Learning for better accuracy
+
+🔹 Real-time Prediction UI — Upload meme images & text
+
+🔹 Modular Architecture — Clean and extensible project structure
+
+🔹 Supports Custom Input & Dataset Extensions
+
+📂 Project Structure
 Multi-modal Sentiment Analysis/
+├── memotion_dataset_7k/          # Dataset (images + labels)
 ├── src/
-│   ├── data_loader.py    # Dataset loading & preprocessing
-│   ├── model.py          # Multi-modal Neural Network Architecture
-│   ├── train.py          # Training loop & evaluation
-│   └── test_run.py       # Verification script
-├── app.py                # Streamlit Web Application
-├── requirements.txt      # Project Dependencies
-└── README.md             # Documentation
-```
+│   ├── data_loader.py            # Dataset loader & preprocessing
+│   ├── model.py                  # Multi-modal model architecture
+│   ├── train.py                  # Training & validation pipeline
+│   └── utils.py                  # Helper utilities
+├── app.py                        # Streamlit Web App
+├── requirements.txt              # Dependencies
+└── README.md                     # Documentation
 
-## 📊 Model Details
--   **Text Encoder**: DistilBERT (`distilbert-base-uncased`)
--   **Image Encoder**: ResNet50 (Pretrained on ImageNet)
--   **Fusion Strategy**: Concatenation of features -> Fully Connected Layers
+🧠 Model Architecture
+Component	Technique
+Text Encoder	DistilBERT (distilbert-base-uncased)
+Image Encoder	ResNet-50 (Pretrained ImageNet)
+Fusion	Concatenation of Text + Image embeddings
+Classifier	Fully-Connected Layers
+Output	Sentiment Class (Positive / Neutral / Negative)
+🛠 Installation
+git clone https://github.com/ramkaranpatel4661/Multi-model-Sentiment-Analysis.git
+cd Multi-model-Sentiment-Analysis
+pip install -r requirements.txt
 
-## 📝 License
-[MIT](https://choosealicense.com/licenses/mit/)
+🧪 Train the Model
+python src/train.py --epochs 3
+
+
+The best model will be saved as:
+
+best_model.pth
+
+🌐 Run the Web App
+streamlit run app.py
+
+
+Open in browser:
+
+http://localhost:8501
+
+📊 Future Enhancements (Planned)
+
+🔸 Support for emotion classification
+
+🔸 Attention-based fusion layer
+
+🔸 Explainable AI visualization for prediction insights
+
+🔸 Model performance dashboard
+
+🖼 Demo Preview (Add Screenshots Here)
+
+📌 Add images like:
+
+Training results
+
+Streamlit app output
+
+Sample predictions
+
+/assets/screenshots/app_demo.png
+/assets/screenshots/results.png
+
+🤝 Contributing
+
+Pull requests are welcome!
+Feel free to open an Issue or submit an Improvement Suggestion.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+⭐ Support
+
+If you like this project:
+
+👉 Star the repo on GitHub
+👉 Share or contribute 🙂
